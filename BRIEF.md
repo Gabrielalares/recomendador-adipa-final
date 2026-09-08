@@ -25,3 +25,10 @@ El equipo comercial pierde tiempo buscando manualmente en el catálogo cuál es 
 1. Conexión en tiempo real a la base de datos de cursos o API de ADIPA (se usarán datos estáticos simulados).
 2. Envío directo de correos o mensajes automáticos desde la web app.
 3. Sistema de inicio de sesión o autenticación de usuarios.
+
+## Retrospectiva 
+¿Qué pregunta de Claude te hizo dar cuenta de algo que no tenías claro del flujo? No tenia claro el como iniciar. 
+
+¿Qué diferencia hubo entre tu mapa inicial y lo que terminaste construyendo? Conforme lo fui construyendo en el sitio web y lo veia ya tangible, se me ocurria cambiar/agregar en los filtros para que fuera quedando mas completo.
+
+Si tuvieras que hacer este flujo de verdad para ADIPA, ¿cuál sería el primer riesgo o pieza faltante? Automatizar para que se fueran agregando/quitando los programas disponibles por default.
