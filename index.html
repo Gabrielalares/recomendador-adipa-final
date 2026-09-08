@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f8fc" />
+    <title>Recomendador de Programas | ADIPA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#inicio" aria-label="Volver al inicio de ADIPA" title="Volver al inicio">
+          <span class="brand-mark"><span></span><span></span><span></span></span>
+          <span>ADIPA</span>
+        </a>
+        <div class="topbar-context">
+          <span class="status-dot"></span>
+          <span>Catálogo actualizado hoy</span>
+        </div>
+        <button class="avatar" type="button" aria-label="Abrir perfil de Camila Rojas">CR</button>
+      </header>
+
+      <main class="page-content" id="inicio">
+        <section class="intro" aria-labelledby="page-title">
+          <div>
+            <p class="eyebrow">Herramienta comercial <span>•</span> v1.0</p>
+            <h1 id="page-title">Encuentra el programa<br /><em>perfecto para cada perfil.</em></h1>
+            <p class="intro-copy">Filtra nuestro catálogo y lleva una recomendación relevante a tu próxima conversación.</p>
+          </div>
+          <div class="intro-note">
+            <span class="sparkle">✦</span>
+            <span>Recomendaciones<br /><strong>curadas para convertir</strong></span>
+          </div>
+        </section>
+
+        <div class="workspace-grid">
+          <aside class="filters-panel" aria-label="Filtros de recomendación">
+            <div class="panel-heading">
+              <div>
+                <span class="section-kicker">01 / Perfil</span>
+                <h2>Cuéntame sobre tu alumno</h2>
+              </div>
+              <span class="filter-icon">⌘</span>
+            </div>
+            <form id="filters-form">
+              <label class="field-label" for="profession">Profesión o nivel educativo</label>
+              <div class="select-wrap">
+                <select id="profession" name="profession">
+                  <option value="all">Selecciona una opción</option>
+                  <option value="psicologia">Psicología</option>
+                  <option value="medicina">Medicina y salud</option>
+                  <option value="educacion">Educación</option>
+                  <option value="trabajo-social">Trabajo social</option>
+                </select>
+                <span>⌄</span>
+              </div>
+
+              <label class="field-label" for="school">Escuela de ADIPA</label>
+              <div class="select-wrap">
+                <select id="school" name="school">
+                  <option value="all">Todas las escuelas</option>
+                  <option value="Escuela de Salud Mental Adultos">Escuela de Salud Mental Adultos</option>
+                  <option value="Escuela de Salud Mental Infantojuvenil">Escuela de Salud Mental Infantojuvenil</option>
+                  <option value="Escuela de Educación y Neurodesarrollo">Escuela de Educación y Neurodesarrollo</option>
+                  <option value="Escuela de Psicología Organizacional">Escuela de Psicología Organizacional</option>
+                  <option value="Escuela Psicosocial Jurídica">Escuela Psicosocial Jurídica</option>
+                </select>
+                <span>⌄</span>
+              </div>
+
+              <label class="field-label" for="modality">Modalidad</label>
+              <div class="select-wrap">
+                <select id="modality" name="modality">
+                  <option value="all">Todas</option>
+                  <option value="Sincrónico">Sincrónico (En vivo)</option>
+                  <option value="Asincrónico">Asincrónico</option>
+                </select>
+                <span>⌄</span>
+              </div>
+
+              <label class="field-label" for="certification-type">Tipo de Certificación</label>
+              <div class="select-wrap">
+                <select id="certification-type" name="certification-type">
+                  <option value="all">Todos</option>
+                  <option value="Curso">Curso</option>
+                  <option value="Diplomado">Diplomado</option>
+                  <option value="Acreditación">Acreditación</option>
+                  <option value="Especialización">Especialización</option>
+                </select>
+                <span>⌄</span>
+              </div>
+
+              <label class="field-label" for="duration">Duración</label>
+              <div class="select-wrap">
+                <select id="duration" name="duration">
+                  <option value="all">Todas</option>
+                  <option value="Corta">Corta</option>
+                  <option value="Media">Media</option>
+                  <option value="Larga">Larga</option>
+                </select>
+                <span>⌄</span>
+              </div>
+
+              <label class="field-label" for="audience">Público Objetivo</label>
+              <div class="select-wrap">
+                <select id="audience" name="audience">
+                  <option value="all">Todos</option>
+                  <option value="Infantil/Adolescentes">Infantil/Adolescentes</option>
+                  <option value="Adultos">Adultos</option>
+                  <option value="Parejas">Parejas</option>
+                  <option value="General">General</option>
+                </select>
+                <span>⌄</span>
+              </div>
+
+              <fieldset>
+                <legend class="field-label">Presupuesto estimado</legend>
+                <div class="budget-options" role="radiogroup" aria-label="Presupuesto estimado">
+                  <label class="budget-option"><input type="radio" name="budget" value="all" checked /><span>Todos</span></label>
+                  <label class="budget-option"><input type="radio" name="budget" value="low" /><span>Bajo</span></label>
+                  <label class="budget-option"><input type="radio" name="budget" value="medium" /><span>Medio</span></label>
+                  <label class="budget-option"><input type="radio" name="budget" value="high" /><span>Alto</span></label>
+                </div>
+              </fieldset>
+
+              <button class="reset-button" id="reset-filters" type="button">↻ <span>Limpiar filtros</span></button>
+            </form>
+            <div class="filter-tip"><span>✦</span><p><strong>Tip de asesor:</strong> comienza con la escuela de ADIPA para encontrar una recomendación más precisa.</p></div>
+          </aside>
+
+          <section class="results-area" aria-labelledby="results-title">
+            <div class="results-header">
+              <div>
+                <span class="section-kicker">02 / Recomendaciones</span>
+                <h2 id="results-title">Programas para recomendar <span id="result-count">3</span></h2>
+              </div>
+              <button class="sort-button" id="sort-button" type="button">Ordenar: Relevancia <span>⌄</span></button>
+            </div>
+            <div class="results-grid" id="results-grid"></div>
+            <div class="empty-state" id="empty-state" hidden>
+              <div class="empty-icon">⌁</div>
+              <h3>No hay programas que coincidan</h3>
+              <p>Intenta ampliar el presupuesto o cambiar la escuela de ADIPA para ver más opciones.</p>
+              <button class="primary-button" id="empty-reset" type="button">Ampliar búsqueda</button>
+            </div>
+            <div class="results-footer" id="results-footer">
+              <span class="footer-line"></span>
+              <span>Mostrando las mejores coincidencias para tu búsqueda</span>
+              <span class="footer-line"></span>
+            </div>
+          </section>
+        </div>
+      </main>
+      <div class="toast" id="toast" role="status" aria-live="polite"><span>✓</span><p>Mensaje copiado al portapapeles</p></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
